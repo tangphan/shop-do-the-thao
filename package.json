@@ -1,0 +1,12 @@
+{
+  "name": "tangfootball-store",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tangfootball static store with a Gemini-powered chat endpoint",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18.17"
+  }
+}

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f8f5">
+  <meta name="description" content="Đăng nhập tài khoản Tangfootball để tiếp tục mua sắm đồ thể thao.">
+  <title>Đăng nhập | Tangfootball</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="auth.css">
+  <script src="auth.js" defer></script>
+</head>
+<body class="auth-body">
+  <header class="auth-header">
+    <a class="brand" href="index.html" aria-label="Tangfootball trang chủ">TANG<span>FOOTBALL</span><small>GEAR UP. PLAY HARD.</small></a>
+    <a class="auth-back" href="index.html">← <span>Quay lại cửa hàng</span></a>
+  </header>
+  <main class="auth-shell">
+    <section class="auth-visual" aria-label="Tangfootball, chơi hết mình">
+      <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=1400&q=85" alt="Trận bóng đá trên sân cỏ">
+      <div class="auth-visual-copy"><span>MOVE WITH PURPOSE</span><h1>VÀO SÂN.<br>HẾT MÌNH.</h1><p>Gear đúng chất. Trận đấu đáng nhớ.</p></div>
+    </section>
+    <section class="auth-panel">
+      <div class="auth-form-wrap">
+        <div class="auth-kicker">TANGFOOTBALL MEMBERS</div>
+        <h2>Chào mừng<br>trở lại.</h2>
+        <p class="auth-intro">Đăng nhập để tiếp tục hành trình của bạn.</p>
+        <form class="auth-form" id="authForm" data-auth-mode="login">
+          <label class="field-label" for="email">Email</label>
+          <input class="auth-input" id="email" name="email" type="email" placeholder="ban@email.com" autocomplete="email" required>
+          <div class="field-heading"><label class="field-label" for="password">Mật khẩu</label></div>
+          <div class="password-wrap"><input class="auth-input" id="password" name="password" type="password" placeholder="Nhập mật khẩu" autocomplete="current-password" minlength="8" required><button class="password-toggle" type="button" data-toggle-password="password" aria-label="Hiện mật khẩu">Hiện</button></div>
+          <div class="form-options"><label class="check-label"><input type="checkbox" name="remember"><span>Ghi nhớ đăng nhập</span></label></div>
+          <button class="auth-submit" type="submit">ĐĂNG NHẬP <span>→</span></button>
+          <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+        </form>
+        <p class="auth-switch">Chưa có tài khoản? <a href="dang-ky.html">Tạo tài khoản</a></p>
+        <p class="auth-demo-note">Đăng nhập và lưu tài khoản cần được kết nối với máy chủ.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="auth-footer"><span>© 2025 Tangfootball</span><a href="index.html">Tiếp tục mua sắm</a></footer>
+</body>
+</html>
